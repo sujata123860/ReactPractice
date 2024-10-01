@@ -1,0 +1,40 @@
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.add-button {
+  color: white;
+  background-color: DodgerBlue;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-button:hover {
+  background-color: RoyalBlue;
+}
+
+.remove-button {
+  color: white;
+  background-color: rgb(255, 30, 79);
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.remove-button:hover {
+  background-color: rgb(225, 30, 79);
+}
