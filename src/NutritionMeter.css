@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.warning {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.warning svg {
+  margin-right: 10px;
+}
+
+.clear-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+  background-color: #c0392b;
+}
+#nutrition-icon {
+  color: #3498db;
+  margin-left: 10px;
+}
+
+button {
+  cursor: pointer;
+  width: 48%;
+  padding: 12px 0;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  font-weight: bold;
+}
+
+button.edit-button {
+  margin-right: 5%;
+}
+
+button.delete-button {
+  margin-left: 5%;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.gradient-background {
+  background: linear-gradient(to right, #3498db, #6dd5fa);
+}
