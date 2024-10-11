@@ -12,13 +12,13 @@ const BmiCalculator = () => {
       console.log("Please enter both weight and height!");
       return;
     }
-    const heightInMeter = parseFloat(height);
+    const heightInMeter = parseFloat(height) / 100;
     const bmiValue = (
       parseFloat(weight) /
       (heightInMeter * heightInMeter)
     ).toFixed(2);
-    console.log(bmiValue);
     setBmi(bmiValue);
+    console.log(bmiValue);
     let bmiStatus = "";
     if (bmiValue < 18.5) {
       bmiStatus = "Underweight";
