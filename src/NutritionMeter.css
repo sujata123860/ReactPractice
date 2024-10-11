@@ -59,7 +59,7 @@ body {
   margin-left: 10px;
 }
 
-button {
+.buttonmeter {
   cursor: pointer;
   width: 48%;
   padding: 12px 0;
@@ -71,11 +71,11 @@ button {
   font-weight: bold;
 }
 
-button.edit-button {
+.buttonmeter.edit-button {
   margin-right: 5%;
 }
 
-button.delete-button {
+.buttonmeter.delete-button {
   margin-left: 5%;
 }
 
