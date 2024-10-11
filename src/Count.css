@@ -38,3 +38,14 @@
 .remove-button:hover {
   background-color: rgb(225, 30, 79);
 }
+
+input[type="text"] {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.copybtn {
+  padding: 13px 20px;
+  border-radius: 1px;
+}
