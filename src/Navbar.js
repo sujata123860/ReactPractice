@@ -23,6 +23,18 @@ function Navbar() {
         <li>
           <a href="/Timer">Timer</a>
         </li>
+        <li>
+          <a href="/BmiCalculator">BmiCalculator</a>
+        </li>
+        <li>
+          <a href="/NutritionMeter">NutritionMeter</a>
+        </li>
+        <li>
+          <a href="/PasswordGenerator">Password Generator</a>
+        </li>
+        <li>
+          <a href="/Currency">Currency</a>
+        </li>
       </ul>
     </>
   );
