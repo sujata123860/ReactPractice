@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Counter from "./Counter.js";
+import BothCounter from "./Counter1.js";
+import Multiply_value from "./Multiply_value.js";
+import ShowArrayValues from "./ShowArrayValues.js";
+import CheckArray from "./CheckArray.js";
+import Timer from "./Timer.js";
+import Navbar from "./Navbar.js";
+import BmiCalculator from "./BmiCalculator";
+import NutritionMeter from "./NutritionMeter";
+import Currency from "./Currency";
+import PasswordGenerator from "./PasswordGenerator";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/Counter" element={<Counter />} />
+          <Route path="/BothCounter" element={<BothCounter />} />
+          <Route path="/Multiply_value" element={<Multiply_value />} />
+          <Route path="/ShowArrayValues" element={<ShowArrayValues />} />
+          <Route path="/CheckArray" element={<CheckArray />} />
+          <Route path="/Timer" element={<Timer />} />
+          <Route path="/BmiCalculator" element={<BmiCalculator />} />
+          <Route path="/NutritionMeter" element={<NutritionMeter />} />
+          <Route path="/PasswordGenerator" element={<PasswordGenerator />} />
+          <Route path="/Currency" element={<Currency />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
