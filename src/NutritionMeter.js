@@ -274,7 +274,7 @@ const NutritionMeter = () => {
           <div className="mt-3 flex justify-between">
             {editItem ? (
               <button
-                className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 mb-4 
+                className="buttonmeter bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 mb-4 
                   font-semibold focus:outline-none text-xs"
                 onClick={updateItemFunction}
               >
@@ -282,7 +282,7 @@ const NutritionMeter = () => {
               </button>
             ) : (
               <button
-                className="bg-green-600 text-white p-3 rounded-md hover:bg-green-700 mb-4 
+                className="buttonmeter bg-green-600 text-white p-3 rounded-md hover:bg-green-700 mb-4 
                   font-semibold focus:outline-none text-xs"
                 onClick={addNutritionItem}
               >
@@ -290,7 +290,7 @@ const NutritionMeter = () => {
               </button>
             )}
             <button
-              className="bg-red-600 text-white p-3 rounded-md font-semibold mb-4 hover:bg-red-700 
+              className="buttonmeter bg-red-600 text-white p-3 rounded-md font-semibold mb-4 hover:bg-red-700 
                 focus:outline-none text-xs"
               onClick={removeAllItems}
             >
@@ -316,7 +316,7 @@ const NutritionMeter = () => {
                 <li>Fat: {item.fat * item.quantity}g</li>
                 <li className="flex items-center mt-2">
                   <button
-                    className="bg-green-500 text-white hover:bg-green-600 p-2 rounded-md font-semibol"
+                    className="buttonmeter bg-green-500 text-white hover:bg-green-600 p-2 rounded-md font-semibol"
                     onClick={() => updateItemQuantity(item.id, 1)}
                   >
                     <FontAwesomeIcon icon={faPlus} />
@@ -332,14 +332,14 @@ const NutritionMeter = () => {
               </ul>
               <div className="mt-3 flex justify-between">
                 <button
-                  className="bg-blue-500 text-white pd-2 rounded-md hover:bg-blue-600 
+                  className="buttonmeter bg-blue-500 text-white pd-2 rounded-md hover:bg-blue-600 
                   font-semibold focus:outline-none text-xs"
                   onClick={() => editItemFunction(item)}
                 >
                   <FontAwesomeIcon icon={faEdit} /> Edit
                 </button>
                 <button
-                  className="bg-red-500 text-white pd-2 rounded-md hover:bg-red-600 
+                  className="buttonmeter bg-red-500 text-white pd-2 rounded-md hover:bg-red-600 
                   font-semibold focus:outline-none text-xs"
                   onClick={() => deleteItemFunction(item.id)}
                 >
